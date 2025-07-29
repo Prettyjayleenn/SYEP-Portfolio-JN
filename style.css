@@ -32,12 +32,22 @@ body{
 }
 
 .grid {
-    display: grid;
+    display: flex;
     gap:15px;
+    justify-content: center;
+flex-wrap: wrap;
+
 }
 
 .grid div{
-    padding: 20px;
+padding: 15px;
     border-radius: 40px;
-    background-color:azure
+    background-color:azure;
+width: 100px;
 }
+
+
+@media (max-width: 768px){
+    body{background-color: rgb(43, 122, 226);}
+}
+
